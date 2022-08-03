@@ -66,7 +66,7 @@ namespace LABOR_4
             this.buscarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(523, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(534, 24);
             this.menuStrip1.TabIndex = 31;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,7 +83,7 @@ namespace LABOR_4
             // buscarToolStripMenuItem1
             // 
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.buscarToolStripMenuItem1.Text = "Ver Informacion";
             // 
             // cmbTablas
@@ -97,6 +97,7 @@ namespace LABOR_4
             this.cmbTablas.Name = "cmbTablas";
             this.cmbTablas.Size = new System.Drawing.Size(121, 21);
             this.cmbTablas.TabIndex = 32;
+            this.cmbTablas.Text = "Clientes";
             // 
             // label1
             // 
@@ -112,7 +113,7 @@ namespace LABOR_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 419);
+            this.ClientSize = new System.Drawing.Size(534, 419);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbTablas);
             this.Controls.Add(this.menuStrip1);

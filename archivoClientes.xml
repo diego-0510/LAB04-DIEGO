@@ -1,0 +1,18 @@
+<CODEXA>
+  <Clientes>
+    <idCliente>1</idCliente>
+    <cedula>208340248</cedula>
+    <nombre>Diego</nombre>
+    <apellido>Umana</apellido>
+    <fechaNacimiento>05-10-02</fechaNacimiento>
+    <sexo>M</sexo>
+  </Clientes>
+  <Clientes>
+    <idCliente>2</idCliente>
+    <cedula>25</cedula>
+    <nombre>Juan</nombre>
+    <apellido>Sancho</apellido>
+    <fechaNacimiento>8-9-1</fechaNacimiento>
+    <sexo>M</sexo>
+  </Clientes>
+</CODEXA>

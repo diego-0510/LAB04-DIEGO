@@ -1,0 +1,12 @@
+<CODEXA>
+  <Compras>
+    <idCliente>1</idCliente>
+    <idProducto>1</idProducto>
+    <fechaCompra>1</fechaCompra>
+  </Compras>
+  <Compras>
+    <idCliente>2</idCliente>
+    <idProducto>2</idProducto>
+    <fechaCompra>2</fechaCompra>
+  </Compras>
+</CODEXA>

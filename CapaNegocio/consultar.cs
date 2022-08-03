@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using CapaDatos;
 
 namespace CapaNegocio
@@ -25,7 +26,8 @@ namespace CapaNegocio
             string query = "Select * from \"" + tabla + "\"";
             DataTable resultado = conexionBD.consultaUnDato(query);
             return resultado;
-
         }
+
+       
     }
 }
