@@ -173,5 +173,11 @@ namespace LABOR_4
         {
             cargarDatosBD();
         }
+
+        private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmVista ventanaVista = new frmVista();
+            ventanaVista.Visible = true;
+        }
     }
 }

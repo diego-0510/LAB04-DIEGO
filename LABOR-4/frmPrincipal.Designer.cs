@@ -83,8 +83,9 @@ namespace LABOR_4
             // buscarToolStripMenuItem1
             // 
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.buscarToolStripMenuItem1.Text = "Ver Informacion";
+            this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
             // 
             // cmbTablas
             // 
