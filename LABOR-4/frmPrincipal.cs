@@ -24,6 +24,40 @@ namespace LABOR_4
 
         }
 
+        private void guardarXMLProductos(string nombreTabla, string[] datos, DataTable informacion)
+        {
+            //Raiz del documento
+            XmlDocument documento = new XmlDocument();
+            XmlElement raiz = documento.CreateElement("CODEXA");
+            documento.AppendChild(raiz);
+            int localidad = 0;
+
+            for (int i = 0; i < informacion.Rows.Count; i++)
+            {
+
+                //Agrega el elemento
+                XmlElement elemento = documento.CreateElement(nombreTabla);
+                raiz.AppendChild(elemento);
+
+                //Agrega los datos 
+                XmlElement idProducto = documento.CreateElement(datos[localidad]);
+                idProducto.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[localidad]].ToString()));
+                elemento.AppendChild(idProducto);
+                localidad++;
+
+                XmlElement descripcion = documento.CreateElement(datos[localidad]);
+                descripcion.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[localidad]].ToString()));
+                elemento.AppendChild(descripcion);
+                localidad++;
+
+                XmlElement precio = documento.CreateElement(datos[localidad]);
+                precio.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[localidad]].ToString()));
+                elemento.AppendChild(precio);
+                localidad = 0;
+            }
+            documento.Save("C:/Users/franc/source/repos/LAB04-DIEGO/archivo" + nombreTabla + ".xml");
+        }
+
         private void guardarXMLCompras(string nombreTabla, string[] datos, DataTable informacion)
         {
             //Raiz del documento
@@ -46,12 +80,12 @@ namespace LABOR_4
                 localidad++;
 
                 XmlElement idProducto = documento.CreateElement(datos[localidad]);
-                idProducto.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[0]].ToString()));
+                idProducto.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[localidad]].ToString()));
                 elemento.AppendChild(idProducto);
                 localidad++;
 
                 XmlElement fechaCompra = documento.CreateElement(datos[localidad]);
-                fechaCompra.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[0]].ToString()));
+                fechaCompra.AppendChild(documento.CreateTextNode(informacion.Rows[i][datos[localidad]].ToString()));
                 elemento.AppendChild(fechaCompra);
                 localidad=0;
             }
@@ -130,7 +164,7 @@ namespace LABOR_4
                 string[] datos = { "idProducto", "descripcion", "precio" };
                 DataTable informacionProductos = new DataTable();
                 informacionProductos = consultar.consultaTodosElementos("productos", datos);
-                //guardarXML(tabla, datos, informacionProductos);
+                guardarXMLProductos(tabla, datos, informacionProductos);
             }
 
         }

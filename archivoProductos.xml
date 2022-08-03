@@ -1,0 +1,17 @@
+<CODEXA>
+  <Productos>
+    <idProducto>1</idProducto>
+    <descripcion>Frescos</descripcion>
+    <precio>15000</precio>
+  </Productos>
+  <Productos>
+    <idProducto>2</idProducto>
+    <descripcion>lata</descripcion>
+    <precio>2550</precio>
+  </Productos>
+  <Productos>
+    <idProducto>3</idProducto>
+    <descripcion>pescado</descripcion>
+    <precio>7800</precio>
+  </Productos>
+</CODEXA>
