@@ -64,7 +64,7 @@ namespace LABOR_4
                     }
                     else
                     {
-                        tabla.Rows.Add(listValores[pos], listValores[pos+1], listValores[pos+2], listValores[pos+3], listValores[pos+4], listValores[pos+5]);
+                        //tabla.Rows.Add(listValores[pos], listValores[pos+1], listValores[pos+2], listValores[pos+3], listValores[pos+4], listValores[pos+5]);
                         
                         //dgvInformacion.Rows[0].Cells[1].Value = tabla.Rows[0]["idCliente"];
                         //listaGeneral[pos] = listValores;
@@ -79,10 +79,6 @@ namespace LABOR_4
             }
             xmlTextReader.Close();
             
-            for(int a = 0; a < listaGeneral; i++)
-            {
-                tabla.Rows.Add(listaGeneral[i], listaGeneral[i], listaGeneral[i], listaGeneral[i], listaGeneral[i], listaGeneral[i]);
-            }
             //cargarClientes(listaGeneral);
         }
 
